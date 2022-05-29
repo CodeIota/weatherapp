@@ -6,11 +6,9 @@ type PropsNextDayContainer = {
 
 const NextDayContainer = (props: PropsNextDayContainer) => {
   return (
-    <div className='flex items-center justify-center'>
-        <div className='grid grid-cols-2 gap-4'>
-        {props.children}
-        </div>
-    </div>
+      <div className='grid grid-cols-2 gap-4 md:flex md:flex-row md:place-content-between'>
+      {props.children}
+      </div>
   )
 }
 

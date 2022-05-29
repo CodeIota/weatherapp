@@ -5,7 +5,7 @@ import { convertDate } from '../../helpers/convertDateHelper'
 type currentInfoProps = {
   name: string,
   temp?: number,
-  weather: string,
+  weather: string
   date?: number
 }
 
@@ -14,7 +14,7 @@ const TodayInfo: React.FC<currentInfoProps> = ({...currentInfo}: currentInfoProp
 
   return (
     <div className='flex flex-col items-center justify-center'>
-            <h1 className='text-9xl  text-athens-gray text-center m-6'>{currentInfo.temp}
+            <h1 className='text-7xl  text-athens-gray text-center m-6'>{currentInfo.temp}
             <span className='text-4xl text-santas-gray font-medium'>°C</span>  
             </h1> 
             <h3 className='text-2xl text-santas-gray text-center font-semibold mt-3 inline-none'>{currentInfo.weather}</h3>
